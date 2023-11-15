@@ -28,7 +28,7 @@ def contar(texto):
 def mostrar_primeros_registros():
 
     url = "https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset"
-    data = pd.read_csv(url)
+    data = pd.read_csv(url, "html.parse")
     primeros_registros = data.head(5)
     print(primeros_registros)
 
