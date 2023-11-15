@@ -32,6 +32,9 @@ soup = BeautifulSoup(req.text, "html.parser")
 dataset_html = soup.find_all('span', class_='heading')
 print(dataset_html)
 
+dfs = pd.read_html(url)
+p
+
 
 
 
