@@ -25,15 +25,14 @@ def contar(texto):
 #print(cantidad) 
 
 
-#def mostrar_primeros_registros():
-url = 'https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset'
-req = requests.get(url)
-soup = BeautifulSoup(req.text, "html.parser")
-dataset_html = soup.find_all('span', class_='heading')
-print(dataset_html)
+def mostrar_primeros_registros():
 
-dfs = pd.read_html(url)
-p
+    url = "https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset"
+    data = pd.read_csv(url)
+    primeros_registros = data.head(5)
+    print(primeros_registros)
+
+
 
 
 
